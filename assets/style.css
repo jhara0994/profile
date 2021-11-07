@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(steelblue, grey)
+}
+
+
+header {
+    display: inline-flex;
+    padding-bottom: 20px;
+    height: 75px; 
+    width: 100vw;
+    border-bottom: 5px solid black;
+}
+
+#personal {
+    width: 50px;
+    height: 80px;
+    margin-left: 20px;
+    border: 2px solid black;
+}
+
+header h1 {
+    background-color: grey;
+    color: black;
+    text-align: center;
+    width: 20%;
+    margin-left: 15px;
+    flex-wrap: nowrap;
+}
+
+nav {
+    width: 80%;
+    font-size: 20px;
+    margin: 20px;
+    text-align: right;
+}
+
+nav a:link {
+    color: blue;
+    padding: 3px;
+    text-decoration: underline;
+}    
+
+article {
+    display: inline-flex;
+}
+
+p {
+    border-left: 3px solid black;
+    margin-left: 175px;
+    margin-right: 90px;
+    padding: 10px;
+}
+
+#background {
+    display: block;
+    width: 80%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.workbox {
+    position: relative;
+    width: 95vw;
+    color: white;
+    margin-left: 10px;
+}
+
+.workbox img {
+    max-width: 50%;
+    width: 20%;
+    height: 150px;
+}
+
+article h2 {
+    padding-left: 100px;
+    text-align: right;
+}
+
+.workbox span {
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#world {
+    width: 40%;
+}
+
+#contact a {
+    padding-left: 5px;
+}
+
+#contact p {
+    margin-left: 175px;
+}
+
+@media screen and (max-width: 992px) {
+    #background {width: 70%}
+    header h1 {background-color: steelblue}
+    p {margin-left: 100px; margin-right: 140px}
+}
+
+@media screen and (max-width: 768px) {
+    nav {font-size: 16px}
+    .workbox img {width: 40%}
+    #world {width: 50%}
+    #background {width: 50%}
+    header h1 {background-color: grey}
+    p {margin-left: 100px; margin-right: 100px}
+}
+
+
+
+
+
