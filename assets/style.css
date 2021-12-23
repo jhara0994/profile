@@ -121,10 +121,14 @@ article h2 {
     color: black;
 }
 
+.program-link:hover {
+    opacity: 0.5;
+}
+
 .repo {
     display: block;
     text-align: center;
-    color: black;
+    color: yellow;
     font-size: 18px;
     font-weight: 600;
 }
