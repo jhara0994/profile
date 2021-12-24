@@ -25,7 +25,7 @@ header {
     font-weight: 800;
     color: black;
     text-align: center;
-    width: 35%;
+    width: 40%;
     margin-left: 15px;
     flex-wrap: nowrap;
 }
@@ -198,13 +198,16 @@ nav a:hover {
 
 /* Media queries to adjust for tablet and mobile devices */ 
 @media screen and (max-width: 992px) {
+    nav a {font-size: 20px; padding: 3px}
+    #me h1 {font-size: 26px; width: 40%}
+    #world {width: 50%}
     #background {width: 70%}
     p {margin-left: 100px; margin-right: 140px}
 }
 
 @media screen and (max-width: 768px) {
     nav a {font-size: 20px; padding: 3px}
-    #me h1 {font-size: 20px}
+    #me h1 {font-size: 22px}
     .personal-info h2 {margin-left: 0px}
     #about-me-info {margin-left: 10px; margin-right: 10px}
     .workbox {margin-left: 0px}
