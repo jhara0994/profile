@@ -1,44 +1,19 @@
-// link to github API
-var apiUrl = "https://api.github.com/users/jhara0994"
-var disasterUrl = 'https://jhara0994.github.io/EONET/'
-var disasterRepo = 'https://github.com/jhara0994/EONET'
-var jsCss = document.querySelector('#javascript-css')
+// possible functionality
 
-// pull projects into page under the correct content name
-function getApi() {
-    fetch(apiUrl)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        // for (var i = 0; i < data.length; i++) {
-          showProject.textContent = data[i].html_url;
-          repoList.appendChild(listItem);
-        })
-}
+// make clickable images rotate with images of all projects that are stored in those fields.
 
-function showProject () {
-    var projectTitle = document.createElement('h3');
-    var projectUrl = document.createElement('a')
-    var projectRepo = document.createElement('a')
-    var projectScreen = document.createElement('img')
+//on project pages, make quick scroll through or walk through of the project and make it move upon the page opening instead of having a static image.
+// Web APIs Activity 19
 
-    projectTitle.textContent = "Disaster Factor"
-    projectUrl.textContent = disasterUrl
-    projectRepo.textContent = disasterRepo
-    projectScreen.textContent = 'Screenshot URL'
-}
+// insert functionality to make links change color once selected. 
+// add localStorage to the js file so that when you return to the page or reload the links still appear as if they have been clicked on 
 
+// create a contact page similar to Web-APIs activity 13
 
-jsCss.addEventListener(onclick, showProject)
+// could implement a timer and once the countdown hits 0 some of the CSS will change.
 
-// pin repositories from Github. 
+// implement button to toggle light and dark mode - Third Party Apis activity 3
 
+// implement a form for potential collaborators - Third Party Activity 5 - use either this or the idea from line 11.
 
-
-
-
-
-
-
-// update Github with profile picture or avatar and biography. 
+// implement moment.js to show current date and time on webpage
