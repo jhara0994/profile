@@ -198,6 +198,73 @@ nav a:hover {
     color: aliceblue;
 }
 
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 400px;
+    background-color: black;
+}
+
+#js-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 475px;
+    background-color: black;
+}
+
+#node-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 475px;
+    background-color: black;
+}
+
+
+.card h4 {
+    color: white;
+}
+
+.card h5 {
+    color: yellow;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.card h5:hover {
+    color: white;
+}
+
+
+.card p {
+    color: white;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+
 #hybrid-block {
     max-width: 50%;
     margin: 0 auto;
