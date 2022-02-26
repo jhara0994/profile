@@ -21,3 +21,29 @@
 var resetBtn = document.getElementById('reset-btn')
 var reset = document.getElementsByClassName('collab-form')
 resetBtn.addEventListener('click', reset.reset())
+
+const nodemailer = require('nodemailer');
+  
+  
+let mailTransporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: 'jharalson29@gmail.com',
+        pass: '*************'
+    }
+});
+  
+let mailDetails = {
+    from: 'haralson3@gmail.com',
+    to: 'jharalson29@gmail.com',
+    subject: 'Test mail',
+    text: 'Node.js testing mail for GeeksforGeeks'
+};
+  
+mailTransporter.sendMail(mailDetails, function(err, data) {
+    if(err) {
+        console.log('Error Occurs');
+    } else {
+        console.log('Email sent successfully');
+    }
+});
