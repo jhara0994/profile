@@ -10,8 +10,6 @@
 
 // create a contact page similar to Web-APIs activity 13
 
-// could implement a timer and once the countdown hits 0 some of the CSS will change.
-
 // implement button to toggle light and dark mode - Third Party Apis activity 3
 
 // implement a form for potential collaborators - Third Party Activity 5 - use either this or the idea from line 11.
