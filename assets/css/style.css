@@ -35,22 +35,23 @@ header {
     flex-wrap: nowrap;
 }
 
-nav {
+#main-nav {
     width: 80%;
     font-size: 20px;
     text-align: right;
 }
 
-nav a {
+#main-nav a {
     color: yellow;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
-    text-decoration: underline;
+    text-decoration: none;
     padding: 10px;
 }    
 
-nav a:hover {
+#main-nav a:hover {
     color: aliceblue;
+    border: 3px solid white;
 }
 
 #background {
@@ -64,11 +65,14 @@ nav a:hover {
 }
 
 .personal-info h2 {
-    font-size: 24px;
+    font-size: 28px;
     color: black;
     font-weight: 800;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
     text-align: center;
+    text-decoration: underline;
 }
 
 #about-me-info {
@@ -138,7 +142,7 @@ nav a:hover {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    height: 120px;
+    height: auto;
 }
 
 .page-title h2 {
@@ -150,6 +154,29 @@ nav a:hover {
 .quote{
     color: yellow;
     font-weight: 500;
+    font-size: 22px;
+}
+
+#page-nav {
+    font-size: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 50%;
+    background-image: url("../pics/navbar_bg.jpeg");
+    background-size: 100%;
+}
+
+#page-nav a {
+    padding: 10px;
+    color: black;
+    font-weight: 800;
+}
+
+#page-nav a:hover {
+    color: blue;
     font-size: 22px;
 }
 
@@ -295,32 +322,97 @@ nav a:hover {
     margin: 0 auto;
 }
 
+input {
+    display: block;
+    width: 60%;
+    padding: 12px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+textarea {
+    display: block;
+    width: 60%;
+    padding: 12px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+textarea:focus {
+    background-color: lightblue;
+}
+
+.form-btn {
+    display: block;
+    padding: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+#reset-btn {
+    background-color: red;
+}
+
+#submit-btn {
+    background-color: lightgreen;
+}
+
 /* CSS for footers */
 #contact {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #contact-box {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
     width: 100%;
     text-align: center;
+
 }
 
 #contact-box a {
-    padding: 5px;
-    font-size: 18px;
+    margin-top: 5px;
+    padding: 15px;
+    font-size: 22px;
     font-weight: 500;
-    text-decoration: underline;
     color: yellow;
 }
 
 #contact-box a:hover {
-    font-size: 20px;
+    font-size: 26px;
     cursor: pointer;
+    box-shadow: 20px 20px 10px black;
 }
 
 footer {
     border-top: solid 5px black;
+    margin-bottom: 10px;
 }
 
 /* Media queries to adjust for tablet and mobile devices */ 

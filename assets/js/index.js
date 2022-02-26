@@ -17,3 +17,7 @@
 // implement moment.js to show current date and time on webpage
 
 // pull the languages used from github and list under the repository link per project.
+
+var resetBtn = document.getElementById('reset-btn')
+var reset = document.getElementsByClassName('collab-form')
+resetBtn.addEventListener('click', reset.reset())
