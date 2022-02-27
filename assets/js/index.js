@@ -18,6 +18,7 @@
 
 // pull the languages used from github and list under the repository link per project.
 
+// JS for resetting the document
 var resetBtn = document.getElementById('reset-btn')
 var reset = document.getElementsByClassName('collab-form')
 resetBtn.addEventListener('click', reset.reset())

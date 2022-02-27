@@ -39,6 +39,7 @@ header {
     width: 80%;
     font-size: 20px;
     text-align: right;
+    margin-top: 10px;
 }
 
 #main-nav a {
@@ -47,6 +48,8 @@ header {
     font-weight: 600;
     text-decoration: none;
     padding: 10px;
+    border: none;
+    transition: border 0.3s;
 }    
 
 #main-nav a:hover {
