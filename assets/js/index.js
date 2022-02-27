@@ -23,6 +23,7 @@ var resetBtn = document.getElementById('reset-btn')
 var reset = document.getElementsByClassName('collab-form')
 resetBtn.addEventListener('click', reset.reset())
 
+// nodemailer to send formatted email from the collab file. 
 const nodemailer = require('nodemailer');
   
   
