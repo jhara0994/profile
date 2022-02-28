@@ -6,7 +6,6 @@ body {
 }
 
 header {
-    display: inline-flex;
     padding-top: 20px;
     height: 100px; 
     width: 100vw;
@@ -19,8 +18,8 @@ header {
 }
 
 #me {
-    display: inline-flex;
-    width: 80px;
+    display: flex;
+    width: 100%;
     height: 100px;
     margin-left: 20px;
 }
@@ -34,10 +33,7 @@ header {
     height: 70%;
     margin-left: 15px;
     flex-wrap: nowrap;
-    box-shadow: 
-		inset 0 0 0 1px rgba(53,86,129, 0.4), 
-		inset 0 0 5px rgba(53,86,129, 0.5),
-		inset -285px 0 35px black;
+    box-shadow: inset -285px 0 35px black;
 	border-radius: 10px;
     color: yellow;
 }
@@ -101,16 +97,11 @@ header {
     margin-bottom: 20px;
 }
 
-#workbox-info {
-    margin-left: 18px;
-    margin-top: 10px;
-}
-
 .workbox {
     position: relative;
-    width: 100vw;
+    width: 100%;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -439,15 +430,23 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    nav a {font-size: 20px; padding: 3px}
-    #me h1 {font-size: 22px}
+    header {height: 200px;}
+    nav a {font-size: 20px;}
+    #personal {top: 0px;}
+    #me h1 {font-size: 22px; height: 95%; width: 100px;}
+    #main-nav {background-color: silver; height: 50px; margin-top: 10px; width: 100%; margin-right: auto; margin-left: auto; background-image: url("../pics/navbar_bg.jpeg"); background-size: 100%;}
+    #main-nav a{font-size: 20px; padding: 3px; color: black}
+    #main-nav a:hover{color: blue; border: 3px solid darkblue;}
     .personal-info h2 {margin-left: 0px}
     #about-me-info {margin-left: 10px; margin-right: 10px}
-    .workbox {margin-left: 0px}
-    .workbox img {width: 40%}
+    .workbox {justify-content: center}
+    .workbox img {width: 40%;}
+    #mern {width: 50%}
+    .workbox span {left: 5px;}
     #world {width: 50%}
     #background {width: 70%}
     #contact-box {margin-left: 20px; margin-right: 20px;}
     .css-js-title {height: 150px}
     p {margin-left: 10px; margin-right: 10px}
+    #page-nav {width: 90%;}
 }
