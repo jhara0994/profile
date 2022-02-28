@@ -38,7 +38,7 @@ header {
 		inset 0 0 0 1px rgba(53,86,129, 0.4), 
 		inset 0 0 5px rgba(53,86,129, 0.5),
 		inset -285px 0 35px black;
-	border-radius: 0 10px 0 10px;
+	border-radius: 10px;
     color: yellow;
 }
 
@@ -254,6 +254,10 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     max-height: 125px;
+}
+
+#coming-bg {
+    margin-top: 10%;
 }
 
 #js-card {
